@@ -1,3 +1,6 @@
+//Required modules
+const buildMarker = require("./marker");
+
 //This is Brooklyn
 console.log("Hello from Brooklyn");
 
@@ -12,3 +15,15 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
+
+//error can also be here
+const marker = buildMarker("restaurants", [-74.009151, 40.705086]).addTo(map) // or [-87.6354, 41.8885]
+
+// console.log(marker);
+
+//Factory Example
+// const markerDomEl = document.createElement("div");
+// markerDomEl.style.width = "32px";
+// markerDomEl.style.height = "39px";
+// markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+// new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
