@@ -1,13 +1,37 @@
+/* --------- Fonts -------- */
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
  
  /* --------- Global -------- */
 * {
     box-sizing: border-box;
 }
-  
+
 body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #C1B5AD;
+    /* background-color: #C1B5AD; */
+}
+
+/* --------- Nav -------- */
+.nav-bar {
+    background: #000;
+    height: 50px;
+    z-index: 99;
+    color: white;
+    font-family: Montserrat;
+    border-bottom: #74cff0 solid 5px;
+}
+
+.nav-list {
+    margin: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    top: 11px;
+    position: relative;
+    font-size: 10px;
 }
 
 /* --------- Map -------- */
