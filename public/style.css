@@ -8,8 +8,16 @@
 
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* background-color: #C1B5AD; */
+    font-family: "Montserrat";
+    background-color: #f5f5f5;
+}
+
+.bg-image {
+    background: url(https://images.pexels.com/photos/571150/pexels-photo-571150.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
 }
 
 /* --------- Nav -------- */
@@ -18,24 +26,43 @@ body {
     height: 50px;
     z-index: 99;
     color: white;
-    font-family: Montserrat;
     border-bottom: #74cff0 solid 5px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
     margin: 0;
-    margin: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    top: 11px;
-    position: relative;
     font-size: 10px;
+    width: 100%;
+}
+
+.nav-list li {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav-list li:hover {
+    border-bottom: #74cff0 solid 1px;
 }
 
 /* --------- Map -------- */
+.app-header {
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    margin: 20px;
+}
+
+.app-container {
+    margin: 60px;
+}
+
 #map {
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+    width: 50vw;
+    margin: 0 auto;
 }
